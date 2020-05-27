@@ -64,7 +64,7 @@ void SetupBlackAndWhiteStripedPalette()
 {
   // 'black out' all 16 palette entries...
   fill_solid( currentPalette, 16, CRGB::Black);
-  // and set every fourth one to white.
+
   currentPalette[0] = CRGB::Green;
   currentPalette[4] = CRGB::Green;
   currentPalette[8] = CRGB::Green;
@@ -88,7 +88,7 @@ void SetupEveryNthPalette(byte nth)
 
   // 'black out' all 16 palette entries...
   fill_solid(currentPalette, 16, CRGB::Black);
-  // and set every fourth one to white.
+
   currentPalette[0] = CRGB::Green;
   currentPalette[nth] = CRGB::Green;
   currentPalette[nth * 2] = CRGB::Green;
