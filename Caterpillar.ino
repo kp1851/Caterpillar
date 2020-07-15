@@ -77,10 +77,7 @@ void SetupOnOffPalette()
   CRGB off  = CRGB::Black;
 
   currentPalette = CRGBPalette16(
-                     on, off, off, off,
-                     on, off, off, off,
-                     on, off, off, off,
-                     on, off, off, off );
+   on, off, off, off, on, off, off, off, on, off, off, off, on, off, off, off );
 }
 
 void SetupEveryNthPalette(byte nth)
